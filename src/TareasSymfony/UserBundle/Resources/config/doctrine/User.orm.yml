@@ -1,0 +1,41 @@
+TareasSymfony\UserBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: TareasSymfony\UserBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        username:
+            type: string
+            length: '50'
+            nullable: true
+        firstname:
+            type: string
+            length: '50'
+            nullable: true
+        lastname:
+            type: string
+            length: '50'
+            nullable: true
+        email:
+            type: string
+            length: '100'
+            unique: true
+        password:
+            type: string
+            length: '100'
+            unique: true
+        role:
+            type: string
+            length: '50'
+        is_active:
+            type: boolean
+        created_at:
+            type: datetime
+        updated_at:
+            type: datetime
+    lifecycleCallbacks: {  }

@@ -1,0 +1,14 @@
+{% extends 'layout_front.twig' %}
+
+{% block body %}
+{{ parent() }}
+
+<h2>Users</h2>
+
+
+{% for user in users %}
+	<p>{{ user.firstname }} - {{ user.lastname }} - {{ user.email }} </p>
+{% endfor %}
+
+
+{% endblock %}

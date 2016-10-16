@@ -1,0 +1,23 @@
+tareas_symfony_user_homepage:
+    path:     /
+    defaults: { _controller: TareasSymfonyUserBundle:Default:index }
+
+
+tareas_symfony_user_index:
+  path: /user/index/
+  defaults: { _controller: TareasSymfonyUserBundle:User:index }
+
+
+tareas_symfony_user_add:
+  path: /user/add/
+  defaults: { _controller: TareasSymfonyUserBundle:User:add }
+
+
+tareas_symfony_user_create:
+    path:     /create
+    defaults: { _controller: TareasSymfonyUserBundle:User:create }
+    methods:  POST
+
+tareas_symfony_user_view:
+  path: /user/view/{id}
+  defaults: { _controller: TareasSymfonyUserBundle:User:view }

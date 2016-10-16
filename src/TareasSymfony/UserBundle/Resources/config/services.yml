@@ -1,0 +1,4 @@
+services:
+#    tareas_symfony_user.example:
+#        class: TareasSymfony\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
